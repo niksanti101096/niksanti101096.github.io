@@ -7,7 +7,8 @@
     background: url(images/choco-hills.jpg);
     background-size: cover;
 }
-.body-beaches {
+.body-go-to,
+.body-news {
     background: #206A5D;
 }
 
@@ -61,9 +62,6 @@
     /* background-color: #F1F1E8; */
     background: rgba(241, 241, 232, 0.8);
 }
-.row {
-    row-gap: 10rem !important;
-}
 .card-text {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -102,7 +100,8 @@
     right: 0;
     font-size: 2rem;
 }
-.modal-text {
+.modal-text,
+.news-text {
     font-size: 1.25rem;
     text-indent: 2rem;
 }
@@ -123,7 +122,11 @@
     opacity: 0.5;
     border-radius: 5%;
 }
-
+.news img {
+    max-width: 100%;
+    margin: auto;
+    float: left;
+}
 /***** End MAIN *****/
 
 
@@ -131,6 +134,7 @@
 footer {
     margin: 0;
     padding: .5rem 0;
+    clear: both;
 }
 footer p {
     color: #206A5D;
@@ -139,3 +143,14 @@ footer p {
     padding: 0 !important;
 }
 /***** End FOOTER *****/
+
+
+/***** MEDIA QUERY *****/
+@media screen and (min-width: 768px) {
+    .news img {
+        max-width: 40%;
+        float: left;
+        margin: 0;
+    }
+}
+/***** End MEDIA QUERY *****/
