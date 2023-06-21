@@ -3,13 +3,46 @@
 /* Container BG : #BFDCAE | rgb(191, 220, 174) */
 /* Other | Hover : #F1F1E8 | rgb(241, 241, 232) */
 
-.body-index {
-    background: url(images/choco-hills.jpg);
-    background-size: cover;
+
+@font-face {
+    font-family: HelloHoney;
+    src: url(fonts/hello\ honey.otf) format('truetype');
+}
+@font-face {
+    font-family: Ram;
+    src: url(fonts/Ramyoon.ttf) format('truetype');
+}
+@font-face {
+    font-family: h2;
+    src: url(fonts/Mythical\ Prince.ttf) format('truetype');
+}
+@font-face {
+    font-family: ModalTitle;
+    src: url(fonts/Bright\ Melody\ Personal\ Use\ Only.ttf) format('truetype');
+}
+@font-face {
+    font-family: Ananda;
+    src: url(fonts/Ananda\ Black\ Personal\ Use.ttf) format('truetype');
+}
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p {
+    font-size: 0.9rem;
 }
 .body-go-to,
-.body-news {
-    background: #206A5D;
+.body-news,
+.body-index,
+.body-featured {
+    /* background: #206A5D; */
+    background: url(images/bg-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body-about {
+    background: url(images/bg-photo-about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg-header-footer {
@@ -47,9 +80,38 @@
     width:60% !important;
     background-color: #BFDCAE;
 }
+.news-bg {
+    background-color: #F1F1E8;
+}
 /***** End HEADER & NAVBAR *****/
 
 /***** MAIN *****/
+.footer-fixed {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;  
+}
+.index-title h1 {
+    font-family: "Ram";
+    font-size: 3rem;
+    font-weight: bolder;
+    background: url(images/choco-hills.png);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.index-title h2 {
+    font-family: "HelloHoney";
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #F1F1E8;
+}
+.container h2 {
+    font-family: "h2";
+    font-weight: bold;
+}
 .main-text p {
     text-indent: 1.5rem;
     line-height: 1.8rem;
@@ -75,6 +137,12 @@
 }
 .card-goto:hover {
     transform: scale(1.05);
+}
+.card-title {
+    font-weight: bolder;
+}
+.card-featured {
+    background: rgba(241, 241, 232, 0.8);
 }
 .carousel-title {
     position: absolute;
@@ -102,16 +170,19 @@
 }
 .modal-text,
 .news-text {
-    font-size: 1.25rem;
     text-indent: 2rem;
 }
-/* .btn-google-map {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 1.25rem;
-    margin-right: 1.25rem;
-} */
+.modal-content h3 {
+    font-size: 3rem;
+    color: black;
+    font-family: "ModalTitle";
+}
+.news-header {
+    font-family: "ModalTitle";
+}
+.modal-text p {
+    font-size: 1.25rem !important;
+}
 .text-dark {
     color: black !important;
 }
@@ -131,6 +202,12 @@
 }
 .tab-content h2 {
     padding-left: 1.5rem;
+}
+.about-title {
+    font-family: "Ananda";
+}
+.bg-about-me {
+    background: rgba(225, 225, 225, 0.8);
 }
 /***** End MAIN *****/
 
@@ -156,6 +233,17 @@ footer p {
         max-width: 40%;
         float: left;
         margin: 0;
+    }
+    .index-title h1 {
+        font-family: "Ram";
+        font-size: 5rem;
+    }
+    .index-title h2 {
+        font-family: "HelloHoney";
+        font-size: 4rem;
+    }
+    p {
+        font-size: 1rem;
     }
 }
 /***** End MEDIA QUERY *****/
