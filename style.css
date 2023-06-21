@@ -69,11 +69,11 @@
     overflow-y: hidden;
     text-indent: 1.5rem;
 }
-.card {
+.card-goto {
     transition: transform 0.2s ease-in-out;
     box-shadow: 0.5rem 0.5rem 1rem black;
 }
-.card:hover {
+.card-goto:hover {
     transform: scale(1.05);
 }
 .carousel-title {
@@ -115,7 +115,9 @@
 .text-dark {
     color: black !important;
 }
-
+.tab-content h2 {
+    text-align: center;
+}
 .map-overlay {
     position: absolute;
     top: 0;
@@ -126,6 +128,9 @@
     max-width: 100%;
     margin: auto;
     float: left;
+}
+.tab-content h2 {
+    padding-left: 1.5rem;
 }
 /***** End MAIN *****/
 
