@@ -33,14 +33,9 @@ p {
 .body-go-to,
 .body-news,
 .body-index,
-.body-featured {
-    /* background: #206A5D; */
-    background: url(images/bg-photo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+.body-featured,
 .body-about {
-    background: url(images/bg-photo-about.png);
+    background: url(images/bg-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -50,6 +45,11 @@ p {
 }
 
 /***** HEADER & NAVBAR *****/
+.navbar-brand {
+    background-color: #F1F1E8;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
 .nav-item .nav-link.active {
     background-color: #F1F1E8 !important;
     color: #81B214;
@@ -68,6 +68,7 @@ p {
 }
 .dropdown-item {
     color: #206A5D;
+    font-size: small;
 }
 .dropdown-menu {
     background-color: #BFDCAE;
@@ -86,12 +87,6 @@ p {
 /***** End HEADER & NAVBAR *****/
 
 /***** MAIN *****/
-.footer-fixed {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3rem;  
-}
 .index-title h1 {
     font-family: "Ram";
     font-size: 3rem;
@@ -112,7 +107,8 @@ p {
     font-family: "h2";
     font-weight: bold;
 }
-.main-text p {
+.main-text p,
+.about {
     text-indent: 1.5rem;
     line-height: 1.8rem;
 }
@@ -121,7 +117,6 @@ p {
 }
 
 .text-bg {
-    /* background-color: #F1F1E8; */
     background: rgba(241, 241, 232, 0.8);
 }
 .card-text {
@@ -166,7 +161,7 @@ p {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .modal-text,
 .news-text {
@@ -177,11 +172,27 @@ p {
     color: black;
     font-family: "ModalTitle";
 }
-.news-header {
+.news-header,
+.about-h1 {
     font-family: "ModalTitle";
 }
 .modal-text p {
     font-size: 1.25rem !important;
+}
+.modal-footer .btn-secondary {
+    background-color: #BFDCAE !important;
+    color: #206A5D !important;
+    transition: transform 0.3s ease-in-out;
+}
+.modal-footer .btn-secondary:hover {
+    background-color: #81B214 !important;
+    color: #BFDCAE !important;
+}
+.modal-footer .btn-prev:hover {
+    transform : translate(-0.5rem,0)
+}
+.modal-footer .btn-next:hover {
+    transform : translate(0.5rem,0)
 }
 .text-dark {
     color: black !important;
@@ -208,6 +219,32 @@ p {
 }
 .bg-about-me {
     background: rgba(225, 225, 225, 0.8);
+}
+.btn-info {
+    background-color: #81B214 !important;
+    color: #206A5D;
+    border: none;
+}
+.btn-info:hover {
+    background-color: #BFDCAE !important;
+    color: #81B214;
+}
+.btn-primary {
+    background-color: #BFDCAE !important;
+    color: #206A5D;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #206A5D !important;
+    color: #BFDCAE;
+}
+.btn-secondary {
+    background-color: #206A5D;
+    color: #BFDCAE !important;
+}
+.body-about main,
+.body-featured main {
+    min-height: 100vh;
 }
 /***** End MAIN *****/
 
@@ -244,6 +281,9 @@ footer p {
     }
     p {
         font-size: 1rem;
+    }
+    .dropdown-item {
+        font-size: medium;
     }
 }
 /***** End MEDIA QUERY *****/
