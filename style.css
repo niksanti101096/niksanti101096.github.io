@@ -39,7 +39,10 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.body-featured main,
+.body-about main {
+    min-height: 100vh;
+}
 .bg-header-footer {
     background-color: rgba(191, 220, 174, 0.9);
 }
@@ -217,6 +220,12 @@ p {
 .about-title {
     font-family: "Ananda";
 }
+.fs-6 {
+    font-size: smaller !important;
+}
+.img-about-me {
+    width: 80%;
+}
 .bg-about-me {
     background: rgba(225, 225, 225, 0.8);
 }
@@ -241,10 +250,6 @@ p {
 .btn-secondary {
     background-color: #206A5D;
     color: #BFDCAE !important;
-}
-.body-about main,
-.body-featured main {
-    min-height: 100vh;
 }
 /***** End MAIN *****/
 
@@ -284,6 +289,20 @@ footer p {
     }
     .dropdown-item {
         font-size: medium;
+    }
+}
+@media screen and (min-width: 1200px) { 
+    .footer-fixed {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .body-featured main,
+    .body-about main {
+        min-height: 0;
+    }
+    .img-about-me {
+        width: 40%;
     }
 }
 /***** End MEDIA QUERY *****/
